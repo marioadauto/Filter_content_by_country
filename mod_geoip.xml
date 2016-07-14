@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Module GeoIP - show content</name>
+    <author>Mario Eduardo</author>
+    <creationDate>June 2016</creationDate>
+    <copyright>Copyright (C) 2016 - 2016 Mario Eduardo. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>contato@marioeduardo.com</authorEmail>
+    <version>1.0.0</version>
+    <description>Indentify GeoIp and show content.</description>
+    <files>
+        <filename>mod_geoip.xml</filename>
+        <filename module="mod_geoip">mod_geoip.php</filename>
+        <filename>tmpl/default.php</filename>
+    </files>
+    <config>
+        <fields name="params" addfieldpath="/administrator/components/com_content/models/fields">
+                <fieldset name="basic">
+                <field  name="catblock1"
+                        type="category"
+                        extension="com_content"
+                        class="inputbox"
+                        default=""
+                        label="Categoria do bloco 1"
+                        description="Escolha a categoria a ser carregada no bloco 1"
+                        required="true"
+                    >
+                        <option value="0">JOPTION_SELECT_CATEGORY</option>
+                </field>
+                 <field  name="catblock2"
+                        type="category"
+                        extension="com_content"
+                        class="inputbox"
+                        default=""
+                        label="Categoria do bloco 2"
+                        description="Escolha a categoria a ser carregada no bloco 2"
+                        required="true"
+                    >
+                        <option value="0">JOPTION_SELECT_CATEGORY</option>
+                </field>
+                </fieldset>
+        </fields>
+    </config>
+</extension>
