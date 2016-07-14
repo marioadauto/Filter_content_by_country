@@ -1,4 +1,4 @@
-### Module Boostrap Slide for Joomla 3
+### Module Filter Content according country for Joomla 3
 
 This module works to filter content according by user region.
 
